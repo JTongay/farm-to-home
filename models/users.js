@@ -1,5 +1,3 @@
-var Sequelize = require('sequelize');
-
 module.exports = {
   var User = sequelize.define("User", {
    oauthId: {

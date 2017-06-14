@@ -30,7 +30,7 @@ module.exports = function(sequelize, DataTypes){
       associate: function(models) {
         // Associating Author with Posts
         // When an Author is deleted, also delete any associated Posts
-        Event.belongsTo(models.User, {
+        Farm.belongsTo(models.User, {
           as: "Creator",
           foreignKey: {
             name: "creatorId",
@@ -39,4 +39,5 @@ module.exports = function(sequelize, DataTypes){
         });
       }
     }
+    return Farm;
 };
