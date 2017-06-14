@@ -1,0 +1,20 @@
+{
+  "name": "farm-to-home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "pg": "^6.2.4",
+    "react": "^15.6.0",
+    "react-dom": "^15.6.0",
+    "react-router": "^4.1.1",
+    "sequelize": "^4.1.0"
+  }
+}
