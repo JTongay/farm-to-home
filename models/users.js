@@ -6,13 +6,21 @@ module.exports = {
      type: DataTypes.STRING,
     // allowNull: true
    },
-   name: {
+   firstName: {
+     type: DataTypes.STRING,
+     allowNull: false
+   },
+   lastName: {
      type: DataTypes.STRING,
      allowNull: false
    },
    email: {
      type: DataTypes.STRING,
      allowNull: false
+   },
+   profileImage: {
+     type: DataTypes.STRING,
+     allowNull: true
    },
    address: {
      type: DataTypes.String,
@@ -23,10 +31,10 @@ module.exports = {
      allowNull: false,
      defaultValue: Sequelize.NOW
    },
-   credType: {
-     type: DataTypes.STRING,
-     allowNull: false
-   },
+  //  credType: {
+  //    type: DataTypes.STRING,
+  //    allowNull: false
+  //  },
    password: {
      type: DataTypes.STRING,
      allowNull: true
