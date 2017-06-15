@@ -1,10 +1,11 @@
 import React from 'react'
-import { Router, Route, browserHistory, IndexRoute } from 'react-router'
+// import { BrowserRouter as Router, Route, Link, IndexRoute } from 'react-router-dom'
 
 //Import Navigation Component
-import Navbar from './Nav/Nav.component.js'
+import NavbarComponent from './Nav/Nav.component.js'
 
 //Import Page Components
+import Intro from './Components/Intro.component.js'
 
 export default class Main extends React.Component {
 
@@ -12,13 +13,12 @@ export default class Main extends React.Component {
     super()
   }
 
-  render () {
+  render() {
     return (
-      <Router history={ browserHistory }>
-        <Route path="/" component={ Navbar }>
-
-        </Route>
-      </Router>
+      <div className="container-fluid">
+        <NavbarComponent />
+        <Intro />
+      </div>
     )
   }
-})
+}

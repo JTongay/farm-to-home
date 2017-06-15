@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import Main from './Main'
+
 export default class App extends React.Component {
 
   constructor(){
@@ -9,9 +11,7 @@ export default class App extends React.Component {
 
   render(){
     return (
-      <div>
-        <h1>Booyah</h1>
-      </div>
+      <Main />
     )
   }
 

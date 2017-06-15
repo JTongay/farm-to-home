@@ -8,12 +8,10 @@ export default class NavbarComponent extends React.Component {
 
   render(){
     return (
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-              <img alt="Brand" src="...">
-            </a>
+      <nav className="navbar navbar-default">
+        <div className="container-fluid">
+          <div className="navbar-header">
+            <a className="navbar-brand" href="#">Navigation</a>
           </div>
         </div>
       </nav>
